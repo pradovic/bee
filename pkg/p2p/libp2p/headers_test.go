@@ -164,6 +164,7 @@ func TestHeadler(t *testing.T) {
 		t.Fatal(err)
 	}
 
+	// todo:
 	stream, err := s2.NewStream(ctx, overlay1, receivedHeaders, testProtocolName, testProtocolVersion, testStreamName)
 	if err != nil {
 		t.Fatal(err)
